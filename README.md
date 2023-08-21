@@ -18,6 +18,48 @@ We provide links to two papers we used in our study with all Paper Plain feature
 ## UI
 TBD: `ui/` includes implementation of the interface with Paper Plain's features
 
+## Setup
+https://akrabat.com/creating-virtual-environments-with-pyenv/
+
+Install pyenv.
+
+```bash
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+  libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+  xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+curl https://pyenv.run | bash
+```
+
+```bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)
+```
+
+Install Python 3.6.
+
+```
+pyenv install 3.6
+```
+
+Create a virtual environment using Python 3.6.
+
+```bash
+pyenv virtualenv 3.6 env36
+```
+
+Activate the virtual environment.
+
+```bash
+pyenv activate env36
+```
+
+Install the requirements.
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Citation
 
 If you use our work, please cite our preprint
